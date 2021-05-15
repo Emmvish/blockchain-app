@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(173, 166, 166);
+    color: rgb(7, 64, 82);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+form {
+    width: 50%;
+    height: 50%;
+}
+
+select, button, input {
+    display: block;
+    font-weight: bold;
+    padding: 12px 20px;
+}
+
+button {
+    float: right;
+    cursor: default;
+    background-color: rgb(7, 64, 82);
+    color: aquamarine;
+    border: none;
+    outline: none;
+    margin: 14px 0;
+    width: 20%;
+    text-align: center;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    color: rgb(7, 64, 82);
+    border: 1px solid rgb(7, 64, 82);
+    background-color: aquamarine;
+    margin-top: 1rem;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input:focus {
+    border: 3px solid rgb(7, 64, 82);
+}
+
+select {
+    outline: none;
+    color: rgb(7, 64, 82);
+    width: 100%;
+    background-color: aquamarine;
+    width: 100%;
+    border: 1px solid rgb(7, 64, 82);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+select:focus {
+    border: 3px solid rgb(7, 64, 82);
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin-bottom: 8rem;
+}
+
+table {
+    margin-top: 3.2rem;
+    width: 60vw;
+}
+
+td {
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid rgb(7, 64, 82);
+    text-align: center;
+}
+
+tr {
+    margin-bottom: 0;
+}
+
+.primary-row {
+    background-color: aquamarine;
+}
+
+.alternate-row {
+    background-color: azure;
+}
+
+.tab-head {
+    color: blueviolet;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+}

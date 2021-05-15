@@ -1,25 +1,38 @@
 {
-  "name": "javaScript-blockchain",
+  "name": "blockchain",
   "version": "1.0.0",
-  "description": "Learn Blockchain By Building Your Own In JavaScript",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "node_1": "nodemon --watch dev -e js dev/networkNode.js 3001 http://localhost:3001",
-    "node_2": "nodemon --watch dev -e js dev/networkNode.js 3002 http://localhost:3002",
-    "node_3": "nodemon --watch dev -e js dev/networkNode.js 3003 http://localhost:3003",
-    "node_4": "nodemon --watch dev -e js dev/networkNode.js 3004 http://localhost:3004",
-    "node_5": "nodemon --watch dev -e js dev/networkNode.js 3005 http://localhost:3005"
+    "node_1": "node src/backend/networkNode.js 3001 http://localhost:3001",
+    "node_2": "node src/backend/networkNode.js 3002 http://localhost:3002",
+    "node_3": "node src/backend/networkNode.js 3003 http://localhost:3003",
+    "node_4": "node src/backend/networkNode.js 3004 http://localhost:3004",
+    "node_5": "node src/backend/networkNode.js 3005 http://localhost:3005",
+    "build": "webpack -p"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.3",
-    "nodemon": "^1.17.3",
-    "request": "^2.87.0",
-    "request-promise": "^4.2.2",
+    "axios": "^0.21.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "normalize.css": "^7.0.0",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
     "sha256": "^0.2.0",
-    "uuid": "^3.2.1"
+    "style-loader": "^0.18.2",
+    "uuid": "^3.4.0",
+    "webpack": "^3.1.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
