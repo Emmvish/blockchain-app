@@ -94,12 +94,11 @@ table {
 td {
     font-weight: bold;
     padding: 10px;
-    border: 1px solid rgb(7, 64, 82);
     text-align: center;
 }
 
 tr {
-    margin-bottom: 0;
+    border: 1px solid rgb(7, 64, 82);
 }
 
 .primary-row {
